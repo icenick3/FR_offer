@@ -1,14 +1,196 @@
 #first {
-  padding: 30px;
-  h1{
-text-align: start;
+  padding: 10px 30px 0 30px;
+
+  h1 {
+    text-align: start;
     font-size: 22px;
   }
-  img{
+
+  img {
     width: 100%;
-    margin: 20px auto;
+    margin: 20px auto 10px auto;
   }
-  p{
+
+  .answers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      display: block;
+      width: 30px;
+      margin: 0;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .finded{
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .relPhoto {
+    position: relative;
+
+
+    .duck {
+      position: absolute;
+      width: 10%;
+      left: 22%;
+      bottom: 2%;
+    }
+
+    .buny {
+      position: absolute;
+      width: 11%;
+      left: 51%;
+      top: 6%;
+    }
+
+    .buterfly {
+      position: absolute;
+      width: 8%;
+      left: 25%;
+      bottom: 56%;
+    }
+
+    .strow {
+      position: absolute;
+      width: 5%;
+      left: 40%;
+      top: 0%;
+    }
+
+    .isum {
+      position: absolute;
+      width: 10%;
+      left: 48%;
+      bottom: 31%;
+    }
+
+    .duck2 {
+      position: absolute;
+      width: 12%;
+      left: 27%;
+      bottom: 12%;
+    }
+
+    .buny2 {
+      position: absolute;
+      width: 8%;
+      left: 56%;
+      top: 69%;
+      @media screen and (max-height: 650px){
+        top: 72%;
+      }
+    }
+
+    .buterfly2 {
+      position: absolute;
+      width: 10%;
+      left: 1%;
+      bottom: 2%;
+    }
+
+    .strow2 {
+      position: absolute;
+      width: 7%;
+      left: 2%;
+      top: 0%;
+    }
+
+    .isum2 {
+      position: absolute;
+      width: 11%;
+      left: 87%;
+      bottom: 1%;
+    }
+
+    .duck3 {
+      position: absolute;
+      width: 4%;
+      left: 26%;
+      bottom: 66%;
+
+    }
+
+    .buny3 {
+      position: absolute;
+      width: 5%;
+      left: 1%;
+      top: 14%;
+    }
+
+    .buterfly3 {
+      position: absolute;
+      width: 6%;
+      left: 4%;
+      bottom: 8%;
+    }
+
+    .strow3 {
+      position: absolute;
+      width: 4%;
+      left: 44%;
+      top: 71%;
+
+    }
+
+    .isum3 {
+      position: absolute;
+      width: 11%;
+      left: 24%;
+      bottom: 33%;
+      transform: rotate(273deg);
+    }
+    .duck4 {
+      position: absolute;
+      width: 10%;
+      left: 51%;
+      bottom: 27%;
+    }
+
+    .buny4 {
+      position: absolute;
+      width: 13%;
+      left: 78%;
+      top: 63%;
+    }
+
+    .buterfly4 {
+      position: absolute;
+      width: 9%;
+      left: 52%;
+      bottom: 2%;
+    }
+
+    .strow4 {
+      position: absolute;
+      width: 8%;
+      left: 21%;
+      top: 53%;
+
+    }
+
+    .isum4 {
+      position: absolute;
+      width: 15%;
+      left: 69%;
+      bottom: 24%;
+    }
+  }
+
+  .miniPhoto{
+    @media screen and (max-height: 650px){
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+
+  p {
     display: block;
     border: 2px #FF7171 solid;
     border-radius: 30px;
@@ -16,4 +198,45 @@ text-align: start;
     font-size: 20px;
     margin: 0 auto 15px auto;
   }
+
+  button {
+    background: #FFD600;
+    color: black;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: block;
+    margin: 20px auto 0 auto;
+    font-size: 22px;
+  }
 }
+
+.bar{
+  width: 100%;
+  border-radius: 15px;
+  height: 40px;
+  border: 2px solid white;
+  margin-top: 15px;
+  div{
+    width: 0;
+    height: 36px;
+    border-radius: 13px;
+    transition: width 0.3s ease-in-out;
+    background: linear-gradient(90.07deg, #FFD600 0.05%, #8FFF00 99.94%);
+  }
+}
+
+
+.border{
+  border-radius: 100%;
+  border: 3px solid red;
+}
+
+
+.containerImg{
+  position: relative;
+  height: 30px;
+}
+

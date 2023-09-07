@@ -10,7 +10,6 @@ const CalculatePage = ({setCounter}) => {
     const newPath = document.querySelector('#buttonOffer').href
 
 
-
     useEffect(() => {
         let interval;
 
@@ -30,11 +29,11 @@ const CalculatePage = ({setCounter}) => {
             startTimer();
         }
 
-        if (progress === 100){
+        if (progress === 100) {
             clearInterval(interval);
-            setTimeout(()=>{
-                window.location.href = newPath
-            },1500)
+            setTimeout(() => {
+                setCounter(12)
+            }, 1500)
         }
 
         return () => {
@@ -56,15 +55,18 @@ const CalculatePage = ({setCounter}) => {
                     </div>
                     <div className="results">
                         <p>
-                            <img src="https://i.pinimg.com/originals/e7/48/33/e748337036df38c352ec9e2db78f1864.png" alt=""/>
+                            <img src="https://i.pinimg.com/originals/37/b5/46/37b5461e6ae8a5bb408a26f9cb016a5e.png"
+                                 alt=""/>
                             Analyse des réponses
                         </p>
                         {progress > 53 && <p>
-                            <img src="https://i.pinimg.com/originals/e7/48/33/e748337036df38c352ec9e2db78f1864.png" alt=""/>
-                            Identification des traumatismes psychologiques de l'enfance
+                            <img src="https://i.pinimg.com/originals/37/b5/46/37b5461e6ae8a5bb408a26f9cb016a5e.png"
+                                 alt=""/>
+                            Nous calculons votre niveau de QI
                         </p>}
                         {progress > 75 && <p>
-                            <img src="https://i.pinimg.com/originals/e7/48/33/e748337036df38c352ec9e2db78f1864.png" alt=""/>
+                            <img src="https://i.pinimg.com/originals/37/b5/46/37b5461e6ae8a5bb408a26f9cb016a5e.png"
+                                 alt=""/>
                             Vérification de l'exactitude du résultat
                         </p>}
                     </div>
