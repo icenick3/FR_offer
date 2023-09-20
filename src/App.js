@@ -4,7 +4,7 @@ import FirstQuestion from "./pages/FirstQuestion/FirstQuestion";
 import SecondQuestion from "./pages/SecondQuestion/SecondQuestion";
 import ThirdQuestion from "./pages/ThirdQuestion/ThirdQuestion";
 import FourthQuestion from "./pages/FourthQuestion/FourthQuestion";
-import {useEffect, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import FifthQuestion from "./pages/FifthQuestion/FifthQuestion";
 import SixthQuestion from "./pages/SixthQuestion/SixthQuestion";
 import SeventhQuestion from "./pages/SeventhQuestion/SeventhQuestion";
@@ -19,65 +19,148 @@ import Final from "./pages/Final/Final";
 
 function App() {
     const [counter, setCounter] = useState(0)
-    const [start, setStart] = useState(false)
 
 
-    const [randomNumber, setRandomNumber] = useState(687);
+const refs = [
+    useRef(),
+    useRef(),
+    useRef(),
+    useRef(),
+    useRef(),
+    useRef(),
+    useRef(),
+    useRef(),
+    useRef(),
+    useRef()
+]
+
+    useEffect(()=>{
+        if (counter > 0 && counter <= 10){
+            refs[0].current.classList.add("or")
+        }
+        if (counter > 1 && counter <= 10){
+            refs[0].current.classList.add("or")
+            refs[1].current.classList.add("or")
+        }
+        if (counter > 2 && counter <= 10){
+            refs[0].current.classList.add("or")
+            refs[1].current.classList.add("or")
+            refs[2].current.classList.add("or")
+        }
+        if (counter > 3 && counter <= 10){
+            refs[0].current.classList.add("or")
+            refs[1].current.classList.add("or")
+            refs[2].current.classList.add("or")
+            refs[3].current.classList.add("or")
+        }
+        if (counter > 4 && counter <= 10){
+            refs[0].current.classList.add("or")
+            refs[1].current.classList.add("or")
+            refs[2].current.classList.add("or")
+            refs[3].current.classList.add("or")
+            refs[4].current.classList.add("or")
+        }
+        if (counter > 5 && counter <= 10){
+            refs[0].current.classList.add("or")
+            refs[1].current.classList.add("or")
+            refs[2].current.classList.add("or")
+            refs[3].current.classList.add("or")
+            refs[4].current.classList.add("or")
+            refs[5].current.classList.add("or")
+        }
+        if (counter > 6 && counter <= 10){
+            refs[0].current.classList.add("or")
+            refs[1].current.classList.add("or")
+            refs[2].current.classList.add("or")
+            refs[3].current.classList.add("or")
+            refs[4].current.classList.add("or")
+            refs[5].current.classList.add("or")
+            refs[6].current.classList.add("or")
+        }
+        if (counter > 7 && counter <= 10){
+            refs[0].current.classList.add("or")
+            refs[1].current.classList.add("or")
+            refs[2].current.classList.add("or")
+            refs[3].current.classList.add("or")
+            refs[4].current.classList.add("or")
+            refs[5].current.classList.add("or")
+            refs[6].current.classList.add("or")
+            refs[7].current.classList.add("or")
+        }
+        if (counter > 8 && counter <= 10){
+            refs[0].current.classList.add("or")
+            refs[1].current.classList.add("or")
+            refs[2].current.classList.add("or")
+            refs[3].current.classList.add("or")
+            refs[4].current.classList.add("or")
+            refs[5].current.classList.add("or")
+            refs[6].current.classList.add("or")
+            refs[7].current.classList.add("or")
+            refs[8].current.classList.add("or")
+        }
+        if (counter > 9 && counter <= 10){
+            refs[0].current.classList.add("or")
+            refs[1].current.classList.add("or")
+            refs[2].current.classList.add("or")
+            refs[3].current.classList.add("or")
+            refs[4].current.classList.add("or")
+            refs[5].current.classList.add("or")
+            refs[6].current.classList.add("or")
+            refs[7].current.classList.add("or")
+            refs[8].current.classList.add("or")
+            refs[9].current.classList.add("or")
+        }
+    },[counter])
 
 
-    const [time, setTime] = useState(0);
-
-    useEffect(() => {
-        const timer = setInterval(() => {
-            if (start) {
-                setTime((prevTime) => prevTime + 1);
-            }
-        }, 1000);
-
-        return () => clearInterval(timer);
-    }, [start]);
-
-    const formatTime = (seconds) => {
-        const hours = Math.floor(seconds / 3600);
-        const minutes = Math.floor((seconds % 3600) / 60);
-        const secs = seconds % 60;
-        return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
-    };
-
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            const min = 684;
-            const max = 697;
-            const generatedNumber = Math.floor(Math.random() * (max - min + 1)) + min;
-            setRandomNumber(generatedNumber);
-        }, 10000);
-
-        return () => {
-            clearInterval(interval);
-        };
-    }, []);
     return (
         <div className="App">
-            {counter === 0 && <TitlePage setCounter={setCounter} setStart={setStart}/>}
-            {counter === 1 && <FirstQuestion setCounter={setCounter} randomNumber={randomNumber}/>}
-            {counter === 2 && <SecondQuestion setCounter={setCounter} randomNumber={randomNumber}/>}
-            {counter === 3 && <ThirdQuestion setCounter={setCounter} randomNumber={randomNumber}/>}
-            {counter === 4 && <FourthQuestion setCounter={setCounter} randomNumber={randomNumber} setStart={setStart}/>}
-            {counter === 5 && <FifthQuestion setCounter={setCounter} randomNumber={randomNumber}/>}
-            {counter === 6 && <SixthQuestion setCounter={setCounter} randomNumber={randomNumber}/>}
-            {counter === 7 && <SeventhQuestion setCounter={setCounter} randomNumber={randomNumber}/>}
-            {counter === 8 && <EighthQuestion setCounter={setCounter} randomNumber={randomNumber}/>}
-            {counter === 9 && <NinthQuestion setCounter={setCounter} randomNumber={randomNumber}/>}
-            {counter === 10 && <TenthQuestion setCounter={setCounter} randomNumber={randomNumber}/>}
+            {counter === 0 && <TitlePage setCounter={setCounter}/>}
+            {counter === 1 && <FirstQuestion setCounter={setCounter} />}
+            {counter === 2 && <SecondQuestion setCounter={setCounter} />}
+            {counter === 3 && <ThirdQuestion setCounter={setCounter} />}
+            {counter === 4 && <FourthQuestion setCounter={setCounter}  />}
+            {counter === 5 && <FifthQuestion setCounter={setCounter} />}
+            {counter === 6 && <SixthQuestion setCounter={setCounter} />}
+            {counter === 7 && <SeventhQuestion setCounter={setCounter} />}
+            {counter === 8 && <EighthQuestion setCounter={setCounter} />}
+            {counter === 9 && <NinthQuestion setCounter={setCounter} />}
+            {counter === 10 && <TenthQuestion setCounter={setCounter} />}
             {counter === 11 && <CalculatePage setCounter={setCounter}/>}
-            {counter === 12 && <Final setCounter={setCounter} formatTime={formatTime} time={time}/>}
-            {(counter > 0 && counter <= 10) &&
-                <div className="timer">
-                    <p> {formatTime(time)}</p>
-                    <p>Meilleur résultat : <span>00:15:23</span></p>
-                    <p id="counter">{counter} / 4</p>
-                </div>}
+            {counter === 12 && <Final setCounter={setCounter}/>}
+            {(counter > 0 && counter <11) &&
+                <div className="counter2">
+                <div  className="con">
+                    <div ref={refs[0]} className="bg"></div>
+                </div>
+                <div  className="con">
+                    <div ref={refs[1]} className="bg"></div>
+                </div>
+                <div  className="con">
+                    <div ref={refs[2]} className="bg"></div>
+                </div>
+                <div  className="con">
+                    <div ref={refs[3]} className="bg"></div>
+                </div>
+                <div  className="con">
+                    <div ref={refs[4]} className="bg"></div>
+                </div>
+                <div  className="con">
+                    <div ref={refs[5]} className="bg"></div>
+                </div>
+                <div  className="con">
+                    <div ref={refs[6]} className="bg"></div>
+                </div>
+                <div  className="con">
+                    <div ref={refs[7]} className="bg"></div>
+                </div>
+                <div  className="con">
+                    <div ref={refs[8]} className="bg"></div>
+                </div>
+                <div  className="con">
+                    <div ref={refs[9]} className="bg"></div>
+                </div>
+            </div>}
         </div>
     );
 }

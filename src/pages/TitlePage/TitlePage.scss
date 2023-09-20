@@ -2,45 +2,34 @@
   padding: 25px;
 
   h1 {
-    text-align: start;
-    font-size: 22px;
-    line-height: 25px;
+    font-size: 38px;
     font-weight: 800;
-    padding: 30px 0 40px;
-    @media screen and (max-height: 650px){
-      padding: 10px 0 10px 0;
-    }
-    span {
-      color: #FFD600;
-    }
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: center;
+
   }
 
   #title_text {
-    display: block;
-    background: #FFD600;
-    font-size: 16px;
-    color: black;
-    font-weight: 600;
-    margin-bottom: 40px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: center;
+    background: #FF2727;
+    color: white;
+    box-shadow: 0px 1.1045219898223877px 6.903262138366699px 0px #FF0000B2;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 20px;
   }
 
-  p {
-    padding: 20px;
-    color: white;
-    font-size: 12px;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-  }
 
   img {
-    width: 100%;
+    width: 80%;
     border-radius: 15px;
     display: block;
     margin: 30px auto;
-    @media screen and (max-height: 650px){
-      width: 70%;
-      margin: 10px auto;
-    }
   }
 
   .mind {
@@ -65,26 +54,25 @@
   .subtitle {
     font-size: 14px;
     display: block;
-    background: #FFD600;
-    color: black;
+    background: #FF2727;
+    color: white;
     font-weight: 600;
     border-radius: 10px;
   }
 
   .button {
-    background: #FFD600;
+    background: #FF2727;
     padding: 20px 60px;
     display: inline-block;
+    box-shadow: 0px 1.1045219898223877px 6.903262138366699px 0px #FF0000B2;
     -webkit-transform: translate(0%, 0%);
     transform: translate(0%, 0%);
     overflow: hidden;
-    color: black;
+    color: white;
     font-size: 20px;
     letter-spacing: 2.5px;
     text-align: center;
     text-decoration: none;
-    -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
     width: fit-content;
     max-width: 80vw;
     border-radius: 10px;
@@ -128,19 +116,18 @@
 
 
 .animated-button1 {
-  background: #FFD600;
-  padding: 20px 40px;
+  background: #FF2727;
+  padding: 20px 60px;
   display: inline-block;
+  box-shadow: 0px 1.1045219898223877px 6.903262138366699px 0px #FF0000B2;
   -webkit-transform: translate(0%, 0%);
   transform: translate(0%, 0%);
   overflow: hidden;
-  color: black;
+  color: white;
   font-size: 20px;
   letter-spacing: 2.5px;
   text-align: center;
   text-decoration: none;
-  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
   width: fit-content;
   border-radius: 10px;
   margin: 40px auto 10px auto;

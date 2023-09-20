@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import './EighthQuestion.css'
 import {AnimatePresence, motion} from "framer-motion";
 import UserCounter from "../../components/UserCounter/UserCounter";
@@ -7,27 +7,28 @@ const EighthQuestion = ({setCounter, randomNumber}) => {
     const onclick = () => {
         setCounter(9)
     }
-
+    const fRef= useRef()
+    useEffect(() => {
+        if (fRef.current){
+            setTimeout(()=>{
+                fRef.current.style.opacity = 1
+            }, 500)
+        }
+    }, [])
     return (
         <AnimatePresence mode="wait">
             <motion.div
-                initial={{ y: -1000,  }}
-                animate={{ y: 0,  }}
-                exit={{ y: 100,  }}
-                transition={{ duration: 0.5 }}
+                initial={{x: -1000}}
+                animate={{x: 0,}}
+                exit={{x: 1000,}}
+                transition={{duration: 0.5}}
             >
-                <div id="second">
-                    <h1>Quel type de nourriture préférez-vous ?</h1>
-                    <div className="imagesContainer">
-                        <div className="images">
-                            <img src="https://i.pinimg.com/originals/a6/ca/22/a6ca229ac279ef2af4ecc2fffa2de2fa.png" alt="" onClick={onclick}/>
-                            <img src="https://i.pinimg.com/originals/d9/c3/1a/d9c31af1df73de6c2165b717ec7130b0.png" alt="" onClick={onclick}/>
-                        </div>
-                        <div className="images">
-                            <img src="https://i.pinimg.com/originals/a3/a5/45/a3a5457bca082fd7ffbc1aabda6c5756.png" alt="" onClick={onclick}/>
-                            <img src="https://i.pinimg.com/originals/3d/a3/0d/3da30d6d57a85dd38d743802289fdef2.png" alt="" onClick={onclick}/>
-                        </div>
-                    </div>
+                <div id="first">
+                    <h1 ref={fRef} style={{opacity: 0,fontSize:"24px",paddingTop:"50px"}}>Quelle est la durée moyenne d'un rapport sexuel ?</h1>
+                    <img src="https://i.pinimg.com/originals/58/6c/71/586c71143e53b63e8df665c4a913839b.png" alt=""/>
+                    <button className="one" onClick={()=> onclick()}>2 à 5 minutes</button>
+                    <button className="one" onClick={()=> onclick()}>5 à 15 minutes</button>
+                    <button className="one" onClick={()=> onclick()}>15 à 30 minutes</button>
                 </div>
             </motion.div>
         </AnimatePresence>

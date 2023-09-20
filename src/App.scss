@@ -18,7 +18,7 @@
 }
 
 body {
-  background: #222222;
+   background: #1A1927;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -70,4 +70,49 @@ body {
 
 .App{
   min-height: 100vh;
+}
+
+.counter2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  margin: 20px auto;
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  .con{
+    height: 7px;
+    width: 29px;
+    background: white;
+    position: relative;
+    border-radius: 1px;
+    .bg{
+      position: absolute;
+      height: 7px;
+      width: 0;
+      top: 0;
+      left: 0;
+      border-radius: 1px;
+      background: #FF2727;
+      transition: 0.5s ease-in-out width;
+    }
+    .or{
+      width: 100%;
+    }
+  }
+}
+
+
+.hhh1{
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-top: 30px;
+  position: absolute;
+  top: 5px;
 }

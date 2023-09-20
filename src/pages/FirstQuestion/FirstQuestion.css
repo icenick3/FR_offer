@@ -1,212 +1,61 @@
-#first {
-  padding: 10px 30px 0 30px;
-}
 #first h1 {
-  text-align: start;
-  font-size: 22px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  position: absolute;
+  top: 5px;
+  padding: 30px 20px 0 20px;
+  transition: opacity ease-in-out 0.5s;
 }
 #first img {
-  width: 100%;
-  margin: 20px auto 10px auto;
+  width: 75%;
+  display: block;
+  margin: 200px auto 50px auto;
 }
-#first .answers {
+#first .duh {
+  width: 64%;
+}
+#first div {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 30px;
 }
-#first .answers img {
-  display: block;
-  width: 30px;
+#first div :first-child {
+  padding-right: 10px;
+  padding-bottom: 20px;
+}
+#first div :last-child {
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+#first div img {
   margin: 0;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  width: 50%;
+  max-height: 220px;
 }
-#first .answers .finded {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+#first .pot {
+  width: 54%;
 }
-#first .relPhoto {
-  position: relative;
-}
-#first .relPhoto .duck {
-  position: absolute;
-  width: 10%;
-  left: 22%;
-  bottom: 2%;
-}
-#first .relPhoto .buny {
-  position: absolute;
-  width: 11%;
-  left: 51%;
-  top: 6%;
-}
-#first .relPhoto .buterfly {
-  position: absolute;
-  width: 8%;
-  left: 25%;
-  bottom: 56%;
-}
-#first .relPhoto .strow {
-  position: absolute;
-  width: 5%;
-  left: 40%;
-  top: 0%;
-}
-#first .relPhoto .isum {
-  position: absolute;
-  width: 10%;
-  left: 48%;
-  bottom: 31%;
-}
-#first .relPhoto .duck2 {
-  position: absolute;
-  width: 12%;
-  left: 27%;
-  bottom: 12%;
-}
-#first .relPhoto .buny2 {
-  position: absolute;
-  width: 8%;
-  left: 56%;
-  top: 69%;
-}
-@media screen and (max-height: 650px) {
-  #first .relPhoto .buny2 {
-    top: 72%;
-  }
-}
-#first .relPhoto .buterfly2 {
-  position: absolute;
-  width: 10%;
-  left: 1%;
-  bottom: 2%;
-}
-#first .relPhoto .strow2 {
-  position: absolute;
-  width: 7%;
-  left: 2%;
-  top: 0%;
-}
-#first .relPhoto .isum2 {
-  position: absolute;
-  width: 11%;
-  left: 87%;
-  bottom: 1%;
-}
-#first .relPhoto .duck3 {
-  position: absolute;
-  width: 4%;
-  left: 26%;
-  bottom: 66%;
-}
-#first .relPhoto .buny3 {
-  position: absolute;
-  width: 5%;
-  left: 1%;
-  top: 14%;
-}
-#first .relPhoto .buterfly3 {
-  position: absolute;
-  width: 6%;
-  left: 4%;
-  bottom: 8%;
-}
-#first .relPhoto .strow3 {
-  position: absolute;
-  width: 4%;
-  left: 44%;
-  top: 71%;
-}
-#first .relPhoto .isum3 {
-  position: absolute;
-  width: 11%;
-  left: 24%;
-  bottom: 33%;
-  transform: rotate(273deg);
-}
-#first .relPhoto .duck4 {
-  position: absolute;
-  width: 10%;
-  left: 51%;
-  bottom: 27%;
-}
-#first .relPhoto .buny4 {
-  position: absolute;
-  width: 13%;
-  left: 78%;
-  top: 63%;
-}
-#first .relPhoto .buterfly4 {
-  position: absolute;
-  width: 9%;
-  left: 52%;
-  bottom: 2%;
-}
-#first .relPhoto .strow4 {
-  position: absolute;
-  width: 8%;
-  left: 21%;
-  top: 53%;
-}
-#first .relPhoto .isum4 {
-  position: absolute;
-  width: 15%;
-  left: 69%;
-  bottom: 24%;
-}
-@media screen and (max-height: 650px) {
-  #first .miniPhoto {
-    width: 70%;
-    margin: 0 auto;
-  }
-}
-#first p {
+#first .one {
   display: block;
-  border: 2px #FF7171 solid;
-  border-radius: 30px;
-  padding: 5px 20px;
-  font-size: 20px;
-  margin: 0 auto 15px auto;
-}
-#first button {
-  background: #FFD600;
   color: black;
-  font-weight: 600;
-  outline: none;
   border: none;
+  outline: none;
+  width: 75%;
+  margin: 15px auto;
+  font-weight: 500;
+  letter-spacing: 0em;
   border-radius: 5px;
   padding: 10px 20px;
-  display: block;
-  margin: 20px auto 0 auto;
-  font-size: 22px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: start;
 }
-
-.bar {
-  width: 100%;
-  border-radius: 15px;
-  height: 40px;
-  border: 2px solid white;
-  margin-top: 15px;
-}
-.bar div {
-  width: 0;
-  height: 36px;
-  border-radius: 13px;
-  transition: width 0.3s ease-in-out;
-  background: linear-gradient(90.07deg, #FFD600 0.05%, #8FFF00 99.94%);
-}
-
-.border {
-  border-radius: 100%;
-  border: 3px solid red;
-}
-
-.containerImg {
-  position: relative;
-  height: 30px;
+#first .two {
+  background: #FFBC27;
 }
 
 /*# sourceMappingURL=FirstQuestion.css.map */

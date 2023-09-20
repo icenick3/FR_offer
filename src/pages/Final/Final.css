@@ -1,3 +1,55 @@
-
+#final img {
+  width: 75%;
+  display: block;
+  margin: 30px auto;
+}
+#final h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 30px 0 5px 0;
+}
+#final p {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 5px 0;
+}
+#final p span {
+  color: #FF2727;
+}
+#final h2 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+  background: #FF2727;
+  box-shadow: 0px 1.1045219898px 6.9032621384px 0px rgba(255, 0, 0, 0.6980392157);
+}
+#final h3 {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 0 50px;
+}
+#final h3 span {
+  color: #FF2727;
+}
+#final button {
+  outline: none;
+  border: none;
+}
 
 /*# sourceMappingURL=Final.css.map */

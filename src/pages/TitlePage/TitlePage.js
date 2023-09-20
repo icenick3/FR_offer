@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import './TitlePage.css'
 import axios from "axios";
 
-const TitlePage = ({setCounter, setStart}) => {
+const TitlePage = ({setCounter}) => {
 
 
     const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
@@ -11,17 +11,15 @@ const TitlePage = ({setCounter, setStart}) => {
 
 
     return (<div id="title_page">
-        <h1>Découvrez <span>votre QI</span> grâce à une nouvelle méthodologie</h1>
+        <h1>Découvrez votre QI sexuel</h1>
 
-        <p id="title_text">Trouvez tous les objets de l'image le plus rapidement possible</p>
-        <img src="https://i.pinimg.com/originals/14/d4/d4/14d4d440013ff016ba10730e897b53ef.png" alt=""/>
+        <p id="title_text">Répondez à 10 questions pour savoir si vous vous y connaissez en matière de sexe</p>
+        <img src="https://i.pinimg.com/originals/ca/0e/19/ca0e19f00ebed6033d453523d21be05e.png" alt=""/>
         <a className="animated-button1" onClick={() => {
             setCounter(1)
-            setStart(true)
         }}>
             Aller au test
         </a>
-        <p className="affterText">Important : le temps et le nombre de tentatives sont pris en compte.</p>
     </div>);
 };
 
