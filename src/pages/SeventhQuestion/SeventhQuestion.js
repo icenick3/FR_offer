@@ -25,11 +25,11 @@ const SeventhQuestion = ({setCounter, randomNumber}) => {
                 transition={{duration: 0.5}}
             >
                 <div id="first">
-                    <h1 ref={fRef} style={{opacity: 0}}>Quel est le pourcentage de personnes en France qui aimeraient pratiquer le BDSM ?</h1>
+                    <h1 ref={fRef} style={{opacity: 0}}>Jaki procent osób we Francji chciałby praktykować BDSM?</h1>
                     <img src="https://i.pinimg.com/originals/6a/12/3b/6a123b6bdc6b97eb16ca8dde9ca59320.png" alt=""/>
-                    <button style={{fontSize:"13px"}} className="one" onClick={()=> onclick()}>42% de femmes et 56% d'hommes</button>
-                    <button style={{fontSize:"13px"}} className="one" onClick={()=> onclick()}>30% de femmes et 34% d'hommes</button>
-                    <button style={{fontSize:"13px"}} className="one" onClick={()=> onclick()}>13% de femmes et 17% d'hommes</button>
+                    <button style={{fontSize:"13px"}} className="one" onClick={()=> onclick()}>42% kobiet i 56% mężczyzn</button>
+                    <button style={{fontSize:"13px"}} className="one" onClick={()=> onclick()}>30% kobiet i 34% mężczyzn</button>
+                    <button style={{fontSize:"13px"}} className="one" onClick={()=> onclick()}>13% kobiet i 17% mężczyzn</button>
                 </div>
             </motion.div>
         </AnimatePresence>

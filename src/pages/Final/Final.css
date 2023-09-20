@@ -1,3 +1,6 @@
+#final {
+  min-height: 100vh;
+}
 #final img {
   width: 75%;
   display: block;
@@ -50,6 +53,11 @@
 #final button {
   outline: none;
   border: none;
+}
+
+.footer2 {
+  text-align: center;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=Final.css.map */

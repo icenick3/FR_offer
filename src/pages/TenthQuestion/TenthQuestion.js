@@ -25,11 +25,11 @@ const TenthQuestion = ({setCounter, randomNumber}) => {
                 transition={{duration: 0.5}}
             >
                 <div id="first">
-                    <h1 style={{opacity: 0}} ref={fRef}>Combien de partenaires sexuels en moyenne une femme a-t-elle au cours de sa vie ?</h1>
+                    <h1 style={{opacity: 0}} ref={fRef}>Ile partnerów seksualnych kobieta ma średnio w ciągu życia?</h1>
                     <img src="https://i.pinimg.com/originals/99/a3/09/99a309c5704d857a4b3da47a5260be48.png" alt=""/>
-                    <button className="one" onClick={()=> onclick()}>1 à 5 partenaires sexuels</button>
-                    <button className="one" onClick={()=> onclick()}>6 à 11 partenaires sexuels</button>
-                    <button className="one" onClick={()=> onclick()}>12 à 17 partenaires sexuels</button>
+                    <button className="one" onClick={()=> onclick()}>Od 1 do 5 partnerów seksualnych</button>
+                    <button className="one" onClick={()=> onclick()}>Od 6 do 11 partnerów seksualnych</button>
+                    <button className="one" onClick={()=> onclick()}>Od 12 do 17 partnerów seksualnych</button>
                 </div>
             </motion.div>
         </AnimatePresence>

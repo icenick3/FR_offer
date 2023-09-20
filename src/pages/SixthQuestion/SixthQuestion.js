@@ -24,19 +24,31 @@ const SixthQuestion = ({setCounter, randomNumber}) => {
                 transition={{duration: 0.5}}
             >
                 <div id="first">
-                    <h1 ref={fRef} style={{opacity: 0}}>Quel est l'endroit le plus courant pour avoir des relations sexuelles après la chambre à coucher
-                        ?</h1>
+                    <h1 ref={fRef} style={{opacity: 0}}>Jakie jest najczęstsze miejsce na odbywanie stosunku poza sypialnią?</h1>
                     <div style={{marginTop: "220px"}}>
-                        <img src="https://i.pinimg.com/originals/d5/dc/95/d5dc9543709d19aeb8a78d0b34041e3e.png" alt=""
-                             onClick={() => onclick()}/>
-                        <img src="https://i.pinimg.com/originals/1a/b6/ff/1ab6ffda31045a21234f233c79eb7c5d.png" alt=""
-                             onClick={() => onclick()}/>
+                        <div>
+                            <img src="https://i.pinimg.com/originals/fe/2d/23/fe2d2302621bb894509d580e91f10491.png" alt=""
+                                 onClick={() => onclick()}/>
+                            <p>Samochód</p>
+                        </div>
+                        <div>
+                            <img src="https://i.pinimg.com/originals/8d/e3/c9/8de3c9c8ba7a0cef281d120c2885c0d7.png" alt=""
+                                 onClick={() => onclick()}/>
+                            <p>Publiczne toalety</p>
+                        </div>
+
                     </div>
                     <div>
-                        <img src="https://i.pinimg.com/originals/de/47/c5/de47c560887c0f843445a6e50aeb1bef.png" alt=""
-                             onClick={() => onclick()}/>
-                        <img src="https://i.pinimg.com/originals/5a/4f/ff/5a4fff4a8f0a7d85b300763a618878ce.png" alt=""
-                             onClick={() => onclick()}/>
+                       <div>
+                           <img src="https://i.pinimg.com/originals/a9/3f/29/a93f29f7715e92c6089b5551666e3c79.png" alt=""
+                                onClick={() => onclick()}/>
+                           <p>Nature</p>
+                       </div>
+                        <div>
+                            <img src="https://i.pinimg.com/originals/01/6f/eb/016febe869b45c595e0fe42155ccaeed.png" alt=""
+                                 onClick={() => onclick()}/>
+                            <p>Kuchnia</p>
+                        </div>
                     </div>
                 </div>
             </motion.div>

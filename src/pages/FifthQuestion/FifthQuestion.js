@@ -25,10 +25,10 @@ const FifthQuestion = ({setCounter}) => {
                 transition={{duration: 0.5}}
             >
                 <div id="first">
-                    <h1 ref={fRef} style={{opacity: 0}}>Y a-t-il un lien entre la taille des chaussures et la taille du pénis d'un homme ?</h1>
+                    <h1 ref={fRef} style={{opacity: 0}}>Czy istnieje związek między rozmiarem buta a rozmiarem penisa u mężczyzny?</h1>
                     <img src="https://i.pinimg.com/originals/38/5d/5f/385d5f9d2857e6eef64d425fef625b81.png" alt=""/>
-                    <button className="one" onClick={()=> onclick()}>Naturellement</button>
-                    <button className="one" onClick={()=> onclick()}>Absolument pas</button>
+                    <button className="one" onClick={()=> onclick()}>Oczywiście</button>
+                    <button className="one" onClick={()=> onclick()}>Absolutnie nie</button>
                 </div>
             </motion.div>
         </AnimatePresence>
