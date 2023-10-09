@@ -11,14 +11,14 @@ const TitlePage = ({setCounter}) => {
 
 
     return (<div id="title_page">
-        <h1>Odkryj swój IQ seksualne</h1>
+        <h1>Discover Your Sexual IQ</h1>
 
-        <p id="title_text">Odpowiedz na 10 pytań, aby dowiedzieć się, czy znasz się na sprawach seksu</p>
+        <p id="title_text">Answer 10 questions to find out how well you know about sexual matters</p>
         <img src="https://i.pinimg.com/originals/ca/0e/19/ca0e19f00ebed6033d453523d21be05e.png" alt=""/>
         <a className="animated-button1" onClick={() => {
             setCounter(1)
         }}>
-            Przejdź do testu
+            Go to the test
         </a>
     </div>);
 };

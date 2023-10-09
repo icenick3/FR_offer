@@ -54,17 +54,17 @@ const CalculatePage = ({setCounter}) => {
                         <p>
                             <img src="https://i.pinimg.com/originals/2c/9c/d8/2c9cd8b680605525b10c7666679190fe.png"
                                  alt=""/>
-                            Analiza odpowiedzi
+                            Analyzing your answers
                         </p>
                         {progress > 53 && <p>
                             <img src="https://i.pinimg.com/originals/2c/9c/d8/2c9cd8b680605525b10c7666679190fe.png"
                                  alt=""/>
-                            Obliczamy Twój IQ seksualne
+                            Calculating your Sexual IQ
                         </p>}
                         {progress > 75 && <p>
                             <img src="https://i.pinimg.com/originals/2c/9c/d8/2c9cd8b680605525b10c7666679190fe.png"
                                  alt=""/>
-                            Sprawdzamy dokładność obliczeń
+                            Verifying the accuracy of calculations
                         </p>}
                     </div>
                 </div>

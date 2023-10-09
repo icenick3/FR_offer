@@ -27,11 +27,11 @@ const SecondQuestion = ({setCounter, randomNumber}) => {
                 transition={{duration: 0.5}}
             >
                 <div id="first">
-                    <h1 ref={fRef} style={{opacity: 0,fontSize:"22px"}}>Ile orgazmów kobieta może doświadczyć podczas stosunku?</h1>
+                    <h1 ref={fRef} style={{opacity: 0, fontSize:"22px"}}>How many orgasms can a woman experience during intercourse?</h1>
                     <img  src="https://i.pinimg.com/originals/f1/80/62/f1806226da8c46de4240f439a44a30e9.png" alt=""/>
-                    <button className="one" onClick={()=> onclick()}>Tylko raz</button>
-                    <button className="one" onClick={()=> onclick()}>Od 1 do 3 razy</button>
-                    <button className="one" onClick={()=> onclick()}>Nie ma ograniczeń</button>
+                    <button className="one" onClick={()=> onclick()}>Only once</button>
+                    <button className="one" onClick={()=> onclick()}>From 1 to 3 times</button>
+                    <button className="one" onClick={()=> onclick()}>There is no limit</button>
                 </div>
             </motion.div>
         </AnimatePresence>

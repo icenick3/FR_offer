@@ -23,12 +23,12 @@ const ThirdQuestion = ({setCounter, randomNumber}) => {
                 transition={{duration: 0.5}}
             >
                 <div id="first">
-                    <h1 ref={fRef} style={{opacity: 0,fontSize:"24px"}}>Jaką metodę antykoncepcji najczęściej stosujesz?</h1>
+                    <h1 ref={fRef} style={{opacity: 0, fontSize:"24px"}}>What method of contraception do you most commonly use?</h1>
                     <img src="https://i.pinimg.com/originals/2e/66/f2/2e66f25dd9107bc3ec21c03f417246d3.png" alt=""/>
-                    <button className="one" onClick={()=> onclick()}>Przerwanie stosunku</button>
-                    <button className="one" onClick={()=> onclick()}>Prezerwatywy</button>
-                    <button className="one" onClick={()=> onclick()}>Tabletka antykoncepcyjna</button>
-                    <button className="one" onClick={()=> onclick()}>Inne</button>
+                    <button className="one" onClick={()=> onclick()}>Withdrawal method</button>
+                    <button className="one" onClick={()=> onclick()}>Condoms</button>
+                    <button className="one" onClick={()=> onclick()}>Birth control pill</button>
+                    <button className="one" onClick={()=> onclick()}>Other</button>
                 </div>
             </motion.div>
         </AnimatePresence>

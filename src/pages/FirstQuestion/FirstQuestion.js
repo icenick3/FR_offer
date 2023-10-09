@@ -27,7 +27,7 @@ const FirstQuestion = ({setCounter, randomNumber}) => {
                 transition={{duration: 0.5}}
             >
                 <div id="first" >
-                    <h1 ref={fRef} style={{opacity: 0,fontSize: "24px"}}>Jaka jest średnia długość penisa w erekcji?</h1>
+                    <h1 ref={fRef} style={{opacity: 0, fontSize: "24px"}}>What is the average length of a penis in erection?</h1>
                     <img src="https://i.pinimg.com/originals/86/10/d9/8610d9fb3d8e59bf1e58443f0dc9bcd7.png" alt=""/>
                     <button className="one" onClick={() => onclick()}>19-21 cm.</button>
                     <button className="one" onClick={() => onclick()}>14-16 cm.</button>

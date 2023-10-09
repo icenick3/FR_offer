@@ -24,30 +24,29 @@ const SixthQuestion = ({setCounter, randomNumber}) => {
                 transition={{duration: 0.5}}
             >
                 <div id="first">
-                    <h1 ref={fRef} style={{opacity: 0}}>Jakie jest najczęstsze miejsce na odbywanie stosunku poza sypialnią?</h1>
+                    <h1 ref={fRef} style={{opacity: 0}}>What is the most common place to have intercourse outside the bedroom?</h1>
                     <div style={{marginTop: "220px"}}>
                         <div>
                             <img src="https://i.pinimg.com/originals/fe/2d/23/fe2d2302621bb894509d580e91f10491.png" alt=""
                                  onClick={() => onclick()}/>
-                            <p>Samochód</p>
+                            <p>Car</p>
                         </div>
                         <div>
                             <img src="https://i.pinimg.com/originals/8d/e3/c9/8de3c9c8ba7a0cef281d120c2885c0d7.png" alt=""
                                  onClick={() => onclick()}/>
-                            <p>Publiczne toalety</p>
+                            <p>Public Restroom</p>
                         </div>
-
                     </div>
                     <div>
-                       <div>
-                           <img src="https://i.pinimg.com/originals/a9/3f/29/a93f29f7715e92c6089b5551666e3c79.png" alt=""
-                                onClick={() => onclick()}/>
-                           <p>Nature</p>
-                       </div>
+                        <div>
+                            <img src="https://i.pinimg.com/originals/a9/3f/29/a93f29f7715e92c6089b5551666e3c79.png" alt=""
+                                 onClick={() => onclick()}/>
+                            <p>Nature</p>
+                        </div>
                         <div>
                             <img src="https://i.pinimg.com/originals/01/6f/eb/016febe869b45c595e0fe42155ccaeed.png" alt=""
                                  onClick={() => onclick()}/>
-                            <p>Kuchnia</p>
+                            <p>Kitchen</p>
                         </div>
                     </div>
                 </div>

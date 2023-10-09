@@ -24,11 +24,11 @@ const EighthQuestion = ({setCounter, randomNumber}) => {
                 transition={{duration: 0.5}}
             >
                 <div id="first">
-                    <h1 ref={fRef} style={{opacity: 0,fontSize:"24px",paddingTop:"50px"}}>Jaka jest średnia długość stosunku seksualnego?</h1>
+                    <h1 ref={fRef} style={{opacity: 0,fontSize:"24px",paddingTop:"50px"}}>What is the average duration of sexual intercourse?</h1>
                     <img src="https://i.pinimg.com/originals/58/6c/71/586c71143e53b63e8df665c4a913839b.png" alt=""/>
-                    <button className="one" onClick={()=> onclick()}>2 do 5 minut</button>
-                    <button className="one" onClick={()=> onclick()}>5 do 15 minut</button>
-                    <button className="one" onClick={()=> onclick()}>15 do 30 minut</button>
+                    <button className="one" onClick={()=> onclick()}>2 to 5 minutes</button>
+                    <button className="one" onClick={()=> onclick()}>5 to 15 minutes</button>
+                    <button className="one" onClick={()=> onclick()}>15 to 30 minutes</button>
                 </div>
             </motion.div>
         </AnimatePresence>

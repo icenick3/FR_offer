@@ -24,11 +24,11 @@ const NinthQuestion = ({setCounter, randomNumber}) => {
                 transition={{duration: 0.5}}
             >
                 <div id="first">
-                    <h1 ref={fRef} style={{opacity: 0}}>Ile partnerów seksualnych kobieta ma średnio w ciągu życia?</h1>
+                    <h1 ref={fRef} style={{opacity: 0}}>How many sexual partners does a woman typically have in her lifetime?</h1>
                     <img src="https://i.pinimg.com/originals/95/0c/b2/950cb22747552c288486a25bca8cf61b.png" alt=""/>
-                    <button className="one" onClick={()=> onclick()}>Od 1 do 3 partnerów seksualnych</button>
-                    <button className="one" onClick={()=> onclick()}>Od 4 do 8 partnerów seksualnych</button>
-                    <button className="one" onClick={()=> onclick()}>Od 9 do 14 partnerów seksualnych</button>
+                    <button className="one" onClick={()=> onclick()}>From 1 to 3 sexual partners</button>
+                    <button className="one" onClick={()=> onclick()}>From 4 to 8 sexual partners</button>
+                    <button className="one" onClick={()=> onclick()}>From 9 to 14 sexual partners</button>
                 </div>
             </motion.div>
         </AnimatePresence>
