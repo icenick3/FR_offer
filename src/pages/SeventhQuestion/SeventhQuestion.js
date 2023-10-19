@@ -25,11 +25,11 @@ const SeventhQuestion = ({setCounter, randomNumber}) => {
                 transition={{duration: 0.5}}
             >
                 <div id="first">
-                    <h1 ref={fRef} style={{opacity: 0}}>What percentage of people in England would like to practice BDSM?</h1>
-                    <img src="https://i.pinimg.com/originals/6a/12/3b/6a123b6bdc6b97eb16ca8dde9ca59320.png" alt=""/>
-                    <button style={{fontSize:"13px"}} className="one" onClick={()=> onclick()}>42% of women and 56% of men</button>
-                    <button style={{fontSize:"13px"}} className="one" onClick={()=> onclick()}>30% of women and 34% of men</button>
-                    <button style={{fontSize:"13px"}} className="one" onClick={()=> onclick()}>13% of women and 17% of men</button>
+                    <h1 ref={fRef} style={{opacity: 0}}>Que pensez-vous des autres religions et croyances ?</h1>
+                    <img className="image-test" src="https://i.pinimg.com/originals/82/d4/4c/82d44ceba2746317954bf07cf6a86c84.png" alt=""/>
+                    <button className="one" onClick={()=> onclick()}><span>A)</span>Je considère que ma religion est la seule bonne</button>
+                    <button className="one" onClick={()=> onclick()}><span>B)</span>Cela ne m'intéresse pas</button>
+                    <button className="one" onClick={()=> onclick()}><span>C)</span>Je respecte toutes les religions </button>
                 </div>
             </motion.div>
         </AnimatePresence>

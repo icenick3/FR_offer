@@ -11,14 +11,14 @@ const TitlePage = ({setCounter}) => {
 
 
     return (<div id="title_page">
-        <h1>Discover Your Sexual IQ</h1>
+        <h1>Quel est votre degré de <span>christianisme</span> ?</h1>
 
-        <p id="title_text">Answer 10 questions to find out how well you know about sexual matters</p>
-        <img src="https://i.pinimg.com/originals/ca/0e/19/ca0e19f00ebed6033d453523d21be05e.png" alt=""/>
+        <p id="title_text">Répondez à 8 questions pour savoir si vous êtes un vrai chrétien</p>
+        <img src="https://i.pinimg.com/originals/2d/34/65/2d34652d48e6a9fd363b3ca51e57331a.png" alt=""/>
         <a className="animated-button1" onClick={() => {
             setCounter(1)
         }}>
-            Go to the test
+            Aller un test
         </a>
     </div>);
 };

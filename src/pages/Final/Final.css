@@ -1,8 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 #final {
   min-height: 100vh;
 }
-#final img {
+#final h4 {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 25px;
+}
+#final h4 span {
+  color: #FFD600;
+}
+#final .logo {
   width: 75%;
+  max-width: 180px;
   display: block;
   margin: 30px auto;
 }
@@ -12,32 +23,23 @@
   line-height: 36px;
   letter-spacing: 0em;
   text-align: center;
-  padding: 30px 0 5px 0;
+  padding: 30px 0 25px 0;
 }
-#final p {
-  font-size: 10px;
-  font-weight: 500;
-  line-height: 26px;
-  letter-spacing: 0em;
-  text-align: center;
-  padding: 5px 0;
-}
-#final p span {
-  color: #FF2727;
+#final h1 span {
+  color: #FFD600;
 }
 #final h2 {
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
   line-height: 18px;
   letter-spacing: 0em;
   text-align: center;
-  color: white;
+  color: black;
   width: 90%;
   margin: 0 auto;
   padding: 10px;
   border-radius: 5px;
-  background: #FF2727;
-  box-shadow: 0px 1.1045219898px 6.9032621384px 0px rgba(255, 0, 0, 0.6980392157);
+  background: linear-gradient(95.96deg, #FFD600 32.9%, #FFB800 74.28%);
 }
 #final h3 {
   font-size: 15px;
@@ -45,10 +47,10 @@
   line-height: 18px;
   letter-spacing: 0em;
   text-align: center;
-  padding: 0 50px;
+  padding: 10px 50px;
 }
 #final h3 span {
-  color: #FF2727;
+  color: #FFD600;
 }
 #final button {
   outline: none;
@@ -58,6 +60,25 @@
 .footer2 {
   text-align: center;
   font-size: 14px;
+  padding: 0 20px;
+}
+
+.final-btn {
+  font-family: "Montserrat", sans-serif;
+}
+
+.shkala {
+  width: 100%;
+  display: block;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.resik {
+  width: 100%;
+  display: block;
+  margin: 0px auto 20px auto;
+  padding: 0 20px;
 }
 
 /*# sourceMappingURL=Final.css.map */

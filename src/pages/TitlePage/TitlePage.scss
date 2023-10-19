@@ -1,26 +1,28 @@
 #title_page {
-  padding: 25px;
+  padding: 15px;
 
   h1 {
-    font-size: 38px;
+    font-size: 30px;
     font-weight: 800;
     line-height: 39px;
     letter-spacing: 0em;
     text-align: center;
+    span{
+      color: #FFD600;
+    }
 
   }
 
   #title_text {
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
     letter-spacing: 0em;
     text-align: center;
-    background: #FF2727;
-    color: white;
-    box-shadow: 0px 1.1045219898223877px 6.903262138366699px 0px #FF0000B2;
+    background: linear-gradient(95.96deg, #FFD600 32.9%, #FFB800 74.28%);
+    color: black;
     border-radius: 4px;
-    padding: 10px;
+    padding:10px 20px;
     margin-top: 20px;
   }
 
@@ -29,7 +31,8 @@
     width: 80%;
     border-radius: 15px;
     display: block;
-    margin: 30px auto;
+    margin: 50px auto;
+    max-width: 200px;
   }
 
   .mind {
@@ -60,28 +63,7 @@
     border-radius: 10px;
   }
 
-  .button {
-    background: #FF2727;
-    padding: 20px 60px;
-    display: inline-block;
-    box-shadow: 0px 1.1045219898223877px 6.903262138366699px 0px #FF0000B2;
-    -webkit-transform: translate(0%, 0%);
-    transform: translate(0%, 0%);
-    overflow: hidden;
-    color: white;
-    font-size: 20px;
-    letter-spacing: 2.5px;
-    text-align: center;
-    text-decoration: none;
-    width: fit-content;
-    max-width: 80vw;
-    border-radius: 10px;
-    margin: 0px auto;
-    display: block;
-    font-weight: 600;
-    transform: scale(0.8);
-    animation: newAnimate 2s infinite ease-in-out;
-  }
+
   
   @keyframes newAnimate {
     0% {
@@ -116,23 +98,21 @@
 
 
 .animated-button1 {
-  background: #FF2727;
+  background: linear-gradient(95.96deg, #FFD600 32.9%, #FFB800 74.28%);
   padding: 20px 60px;
   display: inline-block;
-  box-shadow: 0px 1.1045219898223877px 6.903262138366699px 0px #FF0000B2;
   -webkit-transform: translate(0%, 0%);
   transform: translate(0%, 0%);
   overflow: hidden;
-  color: white;
-  font-size: 20px;
-  letter-spacing: 2.5px;
+  color: black;
+  font-size: 24px;
   text-align: center;
   text-decoration: none;
   width: fit-content;
   border-radius: 10px;
   margin: 40px auto 10px auto;
   display: block;
-  font-weight: 600;
+  font-weight: 700;
   animation: newAnimate 2s ease-in-out infinite;
 }
 

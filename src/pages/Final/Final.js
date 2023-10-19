@@ -24,24 +24,45 @@ const Final = () => {
     return (
         <div>
             <div id="final">
-                <h1>Your test results are ready</h1>
-                <p>Similar results were obtained by <span>3.1%</span> of respondents</p>
-                <h2>Click on the yellow button and send a short SMS to get your results</h2>
-                <img src="https://i.pinimg.com/originals/6e/2e/e2/6e2ee2c6e78d4f6bc29989bed18e4943.png" alt=""/>
-                <h3>Results will be available only for: <span>{String(minutes).padStart(2, '0')}:{String(seconds).padStart(2, '0')}</span></h3>
-                <button style={{marginTop: "20px",width:"70%" }} className="animated-button1"
-                        onClick={() => document.querySelector("#xxx").click()}>Call
+                <h1>Les résultats de vos tests <span>sont prêts</span></h1>
+                <h2>Cliquez sur le bouton jaune pour envoyer un SMS et découvrir à quel point vous êtes chrétien</h2>
+                <img className="logo" src="https://i.pinimg.com/originals/5e/5b/f1/5e5bf1282bbea15aeb85863abdaf173d.png"
+                     alt=""/>
+                <button className="animated-button1 final-btn"
+                        onClick={() => document.querySelector("#xxx").click()}>Envoyer un SMS
                 </button>
+                <h3>Les résultats seront disponibles dans
+                    les: <span>{String(minutes).padStart(2, '0')}:{String(seconds).padStart(2, '0')}</span></h3>
+                <h4>Niveau de <span> christianisme </span>:</h4>
+                <img className="shkala"
+                     src="https://i.pinimg.com/originals/08/b5/0f/08b50fff19c8aefba46724da7e052f9f.png" alt=""/>
+                <img className="resik"
+                     src="https://i.pinimg.com/originals/dd/cb/99/ddcb99e42d7b0add6b9cad4ff5efb91f.png" alt=""/>
             </div>
-            <div className="footer2">
-                <p>Calls cost £6/call plus your phone company’s access charge, service is for entertainment only 18+.</p>
-                    <p>Customer care support@abcmobile.com&nbsp;</p>
-                    <p>© 2023. ABCMobile OÜ&nbsp;</p>
-                    <p>Harju maakond, Tallinn, Peterburi tee 71-318, 11415, Estonia.</p>
-                    <p>See our <a href="https://docs.google.com/document/d/1-mQ66HB6mW2NMzdmBITFSsPXgh20rP-P/edit?usp=sharing" target="_blank" rel="noopener">Terms and Conditions</a> and <a  href="https://docs.google.com/document/d/1L_BjRgkMxTBvyUpMDKaRuiX-bgXC4wowfsp94MUVzjY/edit?usp=sharing&amp;ouid=111759869835797167770&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener">Privacy Policy</a></p>
-                    <p>Affiliate: mobstra.com</p>
-                    <p>&nbsp;</p>
-            </div>
+        {/*    <div className="footer2">*/}
+        {/*        <div className="pricing_box">*/}
+        {/*            <p className="mo_text font-11">*/}
+        {/*<span>Après s'être abonné à Space Games,*/}
+        {/*                l'utilisateur a la possibilité de jouer à tous les jeux prévus.*/}
+        {/*                4.50 EUR + PRIX D'UN SMS. Le prix indiqué comprend la TVA. Les frais ne comprennent pas l'utilisation*/}
+        {/*                d'Internet mobile. L'envoi du SMS MO sera facturé selon votre modèle tarifaire. Telephone hotline:*/}
+        {/*                +33 170700354 or on the e-mail support <a className="mo_text font-11"*/}
+        {/*                                                          href="mailto:spacegames.fr@silverlines.info">spacegames.fr@silverlines.info</a></span>*/}
+        {/*            </p>*/}
+        {/*        </div>*/}
+        {/*    </div>*/}
+        {/*    <div className="footer2">*/}
+        {/*        <div className="pricing_box">*/}
+        {/*            <p className="mo_text font-11">*/}
+        {/*<span>Après s'être abonné à Space Games,*/}
+        {/*                l'utilisateur a la possibilité de jouer à tous les jeux prévus.*/}
+        {/*                4.50 EUR + PRIX D'UN SMS. Le prix indiqué comprend la TVA. Les frais ne comprennent pas l'utilisation*/}
+        {/*                d'Internet mobile. L'envoi du SMS MO sera facturé selon votre modèle tarifaire. Telephone hotline:*/}
+        {/*                +33 170700354 or on the e-mail support <a className="mo_text font-11"*/}
+        {/*                                                          href="mailto:spacegames.fr@silverlines.info">spacegames.fr@silverlines.info</a></span>*/}
+        {/*            </p>*/}
+        {/*        </div>*/}
+        {/*    </div>*/}
         </div>
 
     );

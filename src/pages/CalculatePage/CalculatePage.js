@@ -52,19 +52,19 @@ const CalculatePage = ({setCounter}) => {
                     </div>
                     <div className="results">
                         <p>
-                            <img src="https://i.pinimg.com/originals/2c/9c/d8/2c9cd8b680605525b10c7666679190fe.png"
+                            <img src="https://i.pinimg.com/originals/37/b5/46/37b5461e6ae8a5bb408a26f9cb016a5e.png"
                                  alt=""/>
                             Analyzing your answers
                         </p>
                         {progress > 53 && <p>
-                            <img src="https://i.pinimg.com/originals/2c/9c/d8/2c9cd8b680605525b10c7666679190fe.png"
+                            <img src="https://i.pinimg.com/originals/37/b5/46/37b5461e6ae8a5bb408a26f9cb016a5e.png"
                                  alt=""/>
-                            Calculating your Sexual IQ
+                            Déterminer son niveau de christianisme
                         </p>}
                         {progress > 75 && <p>
-                            <img src="https://i.pinimg.com/originals/2c/9c/d8/2c9cd8b680605525b10c7666679190fe.png"
+                            <img src="https://i.pinimg.com/originals/37/b5/46/37b5461e6ae8a5bb408a26f9cb016a5e.png"
                                  alt=""/>
-                            Verifying the accuracy of calculations
+                            Rapprochement des résultats
                         </p>}
                     </div>
                 </div>

@@ -23,12 +23,11 @@ const ThirdQuestion = ({setCounter, randomNumber}) => {
                 transition={{duration: 0.5}}
             >
                 <div id="first">
-                    <h1 ref={fRef} style={{opacity: 0, fontSize:"24px"}}>What method of contraception do you most commonly use?</h1>
-                    <img src="https://i.pinimg.com/originals/2e/66/f2/2e66f25dd9107bc3ec21c03f417246d3.png" alt=""/>
-                    <button className="one" onClick={()=> onclick()}>Withdrawal method</button>
-                    <button className="one" onClick={()=> onclick()}>Condoms</button>
-                    <button className="one" onClick={()=> onclick()}>Birth control pill</button>
-                    <button className="one" onClick={()=> onclick()}>Other</button>
+                    <h1 ref={fRef} style={{opacity: 0}}>Quel est le nom de la ville où Jésus est né ?</h1>
+                    <img className="image-test" src="https://i.pinimg.com/originals/84/b5/3d/84b53d9b28ab0db69e7e18f80a74274a.png" alt=""/>
+                    <button className="one" onClick={()=> onclick()}><span>A)</span>Bethléem</button>
+                    <button className="one" onClick={()=> onclick()}><span>B)</span>Nazareth</button>
+                    <button className="one" onClick={()=> onclick()}><span>C)</span>Jérusalem</button>
                 </div>
             </motion.div>
         </AnimatePresence>

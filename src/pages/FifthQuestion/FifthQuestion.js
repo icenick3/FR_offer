@@ -25,10 +25,11 @@ const FifthQuestion = ({setCounter}) => {
                 transition={{duration: 0.5}}
             >
                 <div id="first">
-                    <h1 ref={fRef} style={{opacity: 0}}>Is there a relationship between shoe size and a man's penis size?</h1>
-                    <img src="https://i.pinimg.com/originals/38/5d/5f/385d5f9d2857e6eef64d425fef625b81.png" alt=""/>
-                    <button className="one" onClick={()=> onclick()}>Of course</button>
-                    <button className="one" onClick={()=> onclick()}>Absolutely not</button>
+                    <h1 ref={fRef} style={{opacity: 0}}>Que s'est-il passé le septième jour de la création dans la Bible ?</h1>
+                    <img className="image-test" src="https://i.pinimg.com/originals/48/9e/ef/489eef42567eea56ee612bf4ab0d915e.png" alt=""/>
+                    <button className="one" onClick={()=> onclick()}><span>A)</span>Un homme a été créé</button>
+                    <button className="one" onClick={()=> onclick()}><span>B)</span>Dieu s'est reposé de son travail</button>
+                    <button className="one" onClick={()=> onclick()}><span>C)</span>Animaux créés</button>
                 </div>
             </motion.div>
         </AnimatePresence>

@@ -24,31 +24,11 @@ const SixthQuestion = ({setCounter, randomNumber}) => {
                 transition={{duration: 0.5}}
             >
                 <div id="first">
-                    <h1 ref={fRef} style={{opacity: 0}}>What is the most common place to have intercourse outside the bedroom?</h1>
-                    <div style={{marginTop: "220px"}}>
-                        <div>
-                            <img src="https://i.pinimg.com/originals/fe/2d/23/fe2d2302621bb894509d580e91f10491.png" alt=""
-                                 onClick={() => onclick()}/>
-                            <p>Car</p>
-                        </div>
-                        <div>
-                            <img src="https://i.pinimg.com/originals/8d/e3/c9/8de3c9c8ba7a0cef281d120c2885c0d7.png" alt=""
-                                 onClick={() => onclick()}/>
-                            <p>Public Restroom</p>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <img src="https://i.pinimg.com/originals/a9/3f/29/a93f29f7715e92c6089b5551666e3c79.png" alt=""
-                                 onClick={() => onclick()}/>
-                            <p>Nature</p>
-                        </div>
-                        <div>
-                            <img src="https://i.pinimg.com/originals/01/6f/eb/016febe869b45c595e0fe42155ccaeed.png" alt=""
-                                 onClick={() => onclick()}/>
-                            <p>Kitchen</p>
-                        </div>
-                    </div>
+                    <h1 ref={fRef} style={{opacity: 0}}>À quelle fréquence assistez-vous à des services religieux ?</h1>
+                    <img className="image-test" src="https://i.pinimg.com/originals/6f/3e/d8/6f3ed8e980c864047508e3d147e13601.png" alt=""/>
+                    <button className="one" onClick={()=> onclick()}><span>A)</span>Au moins une fois par mois</button>
+                    <button className="one" onClick={()=> onclick()}><span>B)</span>Chaque semaine</button>
+                    <button className="one" onClick={()=> onclick()}><span>C)</span>Au moins une fois par an</button>
                 </div>
             </motion.div>
         </AnimatePresence>

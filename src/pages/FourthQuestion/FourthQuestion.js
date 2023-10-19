@@ -25,12 +25,11 @@ const FourthQuestion = ({setCounter}) => {
                 transition={{duration: 0.5}}
             >
                 <div id="first">
-                    <h1 ref={fRef} style={{opacity: 0}}>What type of pornographic content is most commonly searched for by women in Europe?</h1>
-                    <img src="https://i.pinimg.com/originals/3b/22/5e/3b225e8296254cd091cd271a5df8d30a.png" alt=""/>
-                    <button className="one" onClick={()=> onclick()}>Ebony</button>
-                    <button className="one" onClick={()=> onclick()}>Lesbians</button>
-                    <button className="one" onClick={()=> onclick()}>Anal sex</button>
-                    <button className="one" onClick={()=> onclick()}>Hentai</button>
+                    <h1 ref={fRef} style={{opacity: 0}}>Comment voyez-vous la question de la vie après la mort ?</h1>
+                    <img className="image-test" src="https://i.pinimg.com/originals/60/9b/73/609b731103b878e33c67f007e8cc7ef9.png" alt=""/>
+                    <button className="one" onClick={()=> onclick()}><span>A)</span>J'ai des doutes</button>
+                    <button className="one" onClick={()=> onclick()}><span>B)</span>Je crois en la vie éternelle</button>
+                    <button className="one" onClick={()=> onclick()}><span>C)</span>Je ne crois pas à la vie après la mort</button>
                 </div>
             </motion.div>
         </AnimatePresence>

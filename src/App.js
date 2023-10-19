@@ -96,7 +96,6 @@ const refs = [
             refs[5].current.classList.add("or")
             refs[6].current.classList.add("or")
             refs[7].current.classList.add("or")
-            refs[8].current.classList.add("or")
         }
         if (counter > 9 && counter <= 10){
             refs[0].current.classList.add("or")
@@ -107,8 +106,6 @@ const refs = [
             refs[5].current.classList.add("or")
             refs[6].current.classList.add("or")
             refs[7].current.classList.add("or")
-            refs[8].current.classList.add("or")
-            refs[9].current.classList.add("or")
         }
     },[counter])
 
@@ -153,12 +150,6 @@ const refs = [
                 </div>
                 <div  className="con">
                     <div ref={refs[7]} className="bg"></div>
-                </div>
-                <div  className="con">
-                    <div ref={refs[8]} className="bg"></div>
-                </div>
-                <div  className="con">
-                    <div ref={refs[9]} className="bg"></div>
                 </div>
             </div>}
         </div>
